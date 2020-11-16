@@ -1,19 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
+import { StyleSheet, TouchableOpacity, Text, View, Image, SafeAreaView, Button, Alert } from 'react-native';
+import { useDimensions, useDeviceOrientation } from '@react-native-community/hooks';
+import WelcomeScreen from "./app/screens/WelcomeScreen";
+import ViewImageScreen from "./app/screens/ViewImageScreen";
 
 export default function App() {
-  console.log("App Exceuted");
-  return (
-    <SafeAreaView style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-     </SafeAreaView>
-  );
+  return <ViewImageScreen/>
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'dodgerblue',
-  },
-});
